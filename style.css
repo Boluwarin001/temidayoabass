@@ -1,0 +1,176 @@
+body{
+	margin: auto;
+	font-family: 'Inter', sans-serif;
+	background: black;
+	color: #fff;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+/*NAV AREA*/
+
+.nav{
+	width: 100%;
+	position: fixed;
+	background: #000;
+	z-index: 2;
+	font-size: 14px;
+}
+
+.nav-pad{
+	padding: 30px 100px 20px 100px;
+	display: flex;
+}
+
+.nav-pad div{
+	width: 50%;
+/*	background: blue;*/
+}
+
+.nav-pad .nav-left{
+/*	background: red;*/
+}
+
+.nav-pad .nav-right{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-right div{
+	width: auto;
+	margin: 0 5px;
+}
+
+.nav-right i{
+	font-size: 30px;
+}
+
+.nav-donate{
+/*	border-bottom: 4px solid pink;
+	margin-left: 15px !important;
+	margin-bottom: 13px !important;
+	line-height: 25px;*/
+}
+
+.nav-logo{
+	height: 40px;
+	transition: 0.3s;
+}
+
+.nav-hamburger{
+	font-size: 24px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.nav-logo:hover, .nav-hamburger:hover{
+	transform: scale(0.7);
+}
+
+.nav-left a{
+	margin-top: -5px;
+	display: flex;
+}
+
+.nav-left div{
+	margin-top: 5px;
+	margin-left: 20px;
+}
+
+/*END NAV AREA*/
+
+.hero{
+	padding-top: 200px;
+	text-align: center;
+}
+
+.hero-img{
+	width: 150px;
+	transition: 0.3s;
+}.hero-img:hover{
+	transform: scale(0.9);
+}
+
+.hero-title{
+	font-family: "Playfair Display", sans-serif;
+	padding-top: 10px;
+	font-size: 22px;
+}
+
+.hero-links{
+	display: flex;
+/*	background: red;*/
+	margin-top: 15px;
+	justify-content: space-around;
+}
+
+.hero-link{
+	font-size: 14px;
+/*	background: blue;*/
+	padding-bottom: 10px;
+	border-bottom: 1px dashed black;
+	transition: 0.3s;
+}
+.hero-link:hover{
+	color: blue;
+	border-color: brown;
+}
+
+.expand{
+	position: absolute;
+	bottom: 20px;
+	font-size: 24px;
+/*	background: red;*/
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.images{
+	width: 80%;
+	max-width: 900px;
+	margin: auto;
+	margin-top: 200px;
+	display: flex;
+	flex-wrap: wrap;
+/*	background: red;*/
+}
+
+.images div{
+	width: 32%;
+	margin: 0.5%;
+	height: 300px;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+.grid-item { width: 33.3%; }
+.grid-item--width2 { width: 66.6%; }
+.grid-item--width3 { width: 100%; }
+.grid-item--width4 { width: 50%; }
+
+
+
+
+@media only screen and (max-width: 900px) {
+.grid-item { width: 50%;}
+.grid-item--width2 { width: 100%; }
+
+}
