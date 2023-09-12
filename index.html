@@ -19,6 +19,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	CDN
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 
 </head>
@@ -93,6 +95,9 @@
 	</div>
 
 <script type="text/javascript">
+
+	$grid.imagesLoaded().progress( function() {
+
 	var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   // options
@@ -105,6 +110,7 @@ var msnry = new Masonry( elem, {
 var msnry = new Masonry( '.grid', {
   // options
 });
+}
 </script>
 
 
