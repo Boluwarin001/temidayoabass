@@ -98,13 +98,13 @@
 
 
 	var elem = document.querySelector('.grid');
-elem.imagesLoaded().progress( function() {
 var msnry = new Masonry( elem, {
   // options
   itemSelector: '.grid-item',
   columnWidth: 200
 });
 
+elem.imagesLoaded().progress( function() {
 // element argument can be a selector string
 //   for an individual element
 var msnry = new Masonry( '.grid', {
