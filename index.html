@@ -18,9 +18,9 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	CDN
-<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 
 </head>
@@ -97,20 +97,15 @@
 <script type="text/javascript">
 
 
-	var elem = document.querySelector('.grid');
-var msnry = new Masonry( elem, {
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: 200
+// init Masonry
+var $grid = $('.grid').masonry({
+  // options...
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
 });
 
-msnry.imagesLoaded().progress( function() {
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.grid', {
-  // options
-});
-});
 </script>
 
 
